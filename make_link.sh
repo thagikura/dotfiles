@@ -11,7 +11,7 @@ LINK_FILES='
 .zshrc_util_func
 '
 
-for file in LINK_FILES
+for file in ${LINK_FILES}
 do
   ln -sf ~/dotfiles/${file} ~/${file}
 done
