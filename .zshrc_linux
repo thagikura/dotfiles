@@ -1,1 +1,2 @@
 # Linux specific configurations
+export JAVA_HOME=/usr/local/buildtools/java/jdk
