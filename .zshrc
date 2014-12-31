@@ -1,3 +1,5 @@
+echo "Loading $0"
+
 source ~/.zshrc_path
 source ~/.zshrc_percol_cd
 source ~/.zshrc_percol_history
