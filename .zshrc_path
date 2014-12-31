@@ -16,7 +16,4 @@ GOPATH=$GOROOT/bin
 # Android AOSP
 export PATH=$PATH:~/bin
 
-source $(brew --prefix nvm)/nvm.sh
-nvm use 0.11
-
 export ANDROID_HOME=~/android-sdk
