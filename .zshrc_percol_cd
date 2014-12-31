@@ -1,7 +1,9 @@
+echo "Loading $0"
+
 # cdr, add-zsh-hook
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
- 
+
 # cdr
 zstyle ':completion:*' recent-dirs-insert both
 zstyle ':chpwd:*' recent-dirs-max 500
