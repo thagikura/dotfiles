@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 LINK_FILES='
+.bashrc_change_tab_colors
 .vimrc
 .vimrc_python
 .zshrc

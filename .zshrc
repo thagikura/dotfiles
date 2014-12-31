@@ -9,6 +9,7 @@ elif [ `expr substr $(uname -s) 1 5` = "Linux" ]; then
   source ~/.zshrc_linux
 fi
 
+source ~/.bashrc_change_tab_colors
 source ~/.zshrc_path
 source ~/.zshrc_percol_cd
 source ~/.zshrc_percol_history

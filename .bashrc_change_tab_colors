@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Change tab colors depending on the hostname
+#
+echo "Loading $0"
+
+MD5="md5sum"
+if [ `uname` = "Darwin" ]; then
+  MD5="md5"
+fi
+HASH=`hostname | ${MD5}`
+
+echo -n -e "\033]6;1;bg;red;brightness;$((0x${HASH:0:2}))\a\033]6;1;bg;green;brightness;$((0x${HASH:2:2}))\a\033]6;1;bg;blue;brightness;$((0x${HASH:4:2}))\a"
