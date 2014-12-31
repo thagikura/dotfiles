@@ -2,3 +2,6 @@
 export JAVA_HOME=/usr/local/buildtools/java/jdk
 
 source ~/.zshrc.pre-oh-my-zsh
+
+source ~/.nvm/nvm.sh
+nvm use 0.11
