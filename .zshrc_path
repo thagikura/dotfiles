@@ -19,4 +19,6 @@ PATH=/usr/local/go/bin:$PATH
 # Android AOSP
 export PATH=$PATH:~/bin
 
+# Android PATH
 export ANDROID_HOME=~/android-sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
