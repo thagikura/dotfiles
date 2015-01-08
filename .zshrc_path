@@ -11,6 +11,9 @@ source ~/google-cloud-sdk/path.zsh.inc
 # The next line enables bash completion for gcloud.
 source ~/google-cloud-sdk/completion.zsh.inc
 
+# Gradle
+export PATH=$PATH:~/gradle-2.2.1/bin
+
 # go
 GOROOT=/usr/local/go
 GOPATH=$GOROOT/bin
