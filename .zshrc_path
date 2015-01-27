@@ -11,6 +11,9 @@ source ~/google-cloud-sdk/path.zsh.inc
 # The next line enables bash completion for gcloud.
 source ~/google-cloud-sdk/completion.zsh.inc
 
+# Maven
+export PATH=$PATH:~/apache-maven-3.2.5/bin
+
 # go
 GOROOT=/usr/local/go
 GOPATH=$GOROOT/bin
