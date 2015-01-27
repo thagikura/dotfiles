@@ -18,10 +18,9 @@ do
   ln -sf ~/dotfiles/${file} ~/${file}
 done
 
-VIM_RUNTIME="~/.vim_runtime"
-if [ ! -d "$VIM_RUNTIME" ];then
-    git clone https://github.com/amix/vimrc.git $VIM_RUNTIME
-    sh $VIM_RUNTIME/install_awesome_vimrc.sh
+if [ ! -d ~/.vim_runtime ];then
+    git clone https://github.com/amix/vimrc.git ~/.vim_runtime
+    sh ~/.vim_runtime/install_awesome_vimrc.sh
 fi
-ln -sf ~/dotfiles/my_configs.vim $VIM_RUNTIME/my_configs.vim
+ln -sf ~/dotfiles/my_configs.vim ~/.vim_runtime/my_configs.vim
 

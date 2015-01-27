@@ -7,3 +7,7 @@ source ~/.zshrc.pre-oh-my-zsh
 
 source ~/.nvm/nvm.sh
 nvm use 0.11
+
+# Alias mac like pbcopy and pbpaste
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
