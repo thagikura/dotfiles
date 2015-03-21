@@ -2,7 +2,7 @@
 
 echo "Loading $0"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_76/Contents/Home
 
 source $(brew --prefix nvm)/nvm.sh
 nvm use 0.11
