@@ -13,3 +13,7 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 source /etc/bash_completion.d/g4d
+
+# As a workaround the IDE stops responding where the ibus-deemon is active
+# http://tools.android.com/knownissues/ibus
+export IBUS_ENABLE_SYNC_MODE=1; ibus-daemon -xrd

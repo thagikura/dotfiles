@@ -14,3 +14,5 @@ source ~/.zshrc_path
 source ~/.zshrc_percol_cd
 source ~/.zshrc_percol_history
 source ~/.zshrc_util_func
+source /usr/share/zsh/functions/Completion/Unix/_gradle
+source /usr/share/zsh/functions/Completion/Unix/_gradle
