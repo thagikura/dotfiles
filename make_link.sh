@@ -7,6 +7,7 @@ LINK_FILES='
 .zshrc
 .zshrc_linux
 .zshrc_mac
+.zshrc_mac_corp
 .zshrc_path
 .zshrc_percol_cd
 .zshrc_percol_history

@@ -4,6 +4,12 @@ if [ `uname` = "Darwin" ]; then
   # Mac
   source ~/.zshrc_mac
   source ~/.zsh/scripts/advancedrc
+
+  # Check if the machine is the corporate one
+  hostname | grep "corp.google.com$" > /dev/null 2>&1
+  if [ $? = 0 ]; then
+    source ~/.zshrc_mac_corp
+  fi
 elif [ `expr substr $(uname -s) 1 5` = "Linux" ]; then
   # Linux
   source ~/.zshrc_linux
