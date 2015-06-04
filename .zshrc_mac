@@ -7,3 +7,4 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home
 source $(brew --prefix nvm)/nvm.sh
 nvm use 0.11
 
+export PATH=$PATH:/opt/j2objc-0.9.7
