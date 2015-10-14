@@ -3,6 +3,8 @@ echo "Loading $0"
 
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
 
+export PATH=~/go_appengine
+
 source ~/.zshrc.pre-oh-my-zsh
 
 source ~/.nvm/nvm.sh
