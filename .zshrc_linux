@@ -1,7 +1,7 @@
 # Linux specific configurations
 echo "Loading $0"
 
-export JAVA_HOME=/usr/local/buildtools/java/jdk8-google-v7-64
+export JAVA_HOME=/usr/local/buildtools/java/jdk
 
 export PATH=~/go_appengine
 
