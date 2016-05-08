@@ -5,6 +5,6 @@ echo "Loading $0"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home
 
 source $(brew --prefix nvm)/nvm.sh
-nvm use 0.11
+nvm use 5.0
 
 export PATH=$PATH:/opt/j2objc-0.9.7
