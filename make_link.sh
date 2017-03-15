@@ -5,6 +5,7 @@ LINK_FILES='
 .vimrc
 .vimrc_python
 .zshrc
+.zshrc_init_oh_my_zsh
 .zshrc_linux
 .zshrc_mac
 .zshrc_mac_corp

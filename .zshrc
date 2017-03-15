@@ -3,7 +3,6 @@ echo "Loading $0"
 if [ `uname` = "Darwin" ]; then
   # Mac
   source ~/.zshrc_mac
-  source ~/.zsh/scripts/advancedrc
 
   # Check if the machine is the corporate one
   hostname | grep "corp.google.com$" > /dev/null 2>&1
@@ -20,5 +19,9 @@ source ~/.zshrc_path
 source ~/.zshrc_percol_cd
 source ~/.zshrc_percol_history
 source ~/.zshrc_util_func
-source /usr/share/zsh/functions/Completion/Unix/_gradle
-source /usr/share/zsh/functions/Completion/Unix/_gradle
+
+if [ -f /usr/share/zsh/functions/Completion/Unix/_gradle ];then
+  source /usr/share/zsh/functions/Completion/Unix/_gradle
+elif [ -f /usr/local/share/zsh/site-functions/_gradle ];then
+  source /usr/local/share/zsh/site-functions/_gradle
+fi

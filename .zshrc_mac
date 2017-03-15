@@ -2,9 +2,14 @@
 
 echo "Loading $0"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home
+source ~/.zshrc_init_oh_my_zsh
+
+if [ -d /Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home ];then
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home
+else
+  ls -d /Library/Java/JavaVirtualMachines/jdk1.8.0*.jdk | tail -1
+  JAVA_HOME=`ls -d /Library/Java/JavaVirtualMachines/jdk1.8.0*.jdk | tail -1`
+fi
 
 source $(brew --prefix nvm)/nvm.sh
 nvm use 5.0
-
-export PATH=$PATH:/opt/j2objc-0.9.7
