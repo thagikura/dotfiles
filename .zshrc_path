@@ -29,10 +29,6 @@ export PATH=$PATH:~/bin
 export ANDROID_HOME=~/android-sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-# rbenv
-export PATH="~/.rbenv/bin:$PATH"
-source ~/.rbenv/completions/rbenv.zsh
-
 # scala
 export SCALA_HOME="/usr/local/share/scala"
 export PATH=$PATH:$SCALA_HOME/bin
