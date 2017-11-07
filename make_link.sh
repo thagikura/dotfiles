@@ -10,8 +10,8 @@ LINK_FILES='
 .zshrc_mac
 .zshrc_mac_corp
 .zshrc_path
-.zshrc_percol_cd
-.zshrc_percol_history
+.zshrc_peco_cd
+.zshrc_peco_history
 .zshrc_util_func
 '
 

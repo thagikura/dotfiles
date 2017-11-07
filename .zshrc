@@ -16,8 +16,8 @@ fi
 
 source ~/.bashrc_change_tab_colors
 source ~/.zshrc_path
-source ~/.zshrc_percol_cd
-source ~/.zshrc_percol_history
+source ~/.zshrc_peco_cd
+source ~/.zshrc_peco_history
 source ~/.zshrc_util_func
 
 if [ -f /usr/share/zsh/functions/Completion/Unix/_gradle ];then
