@@ -27,7 +27,7 @@ export PATH=$PATH:~/bin
 
 # Android PATH
 export ANDROID_HOME=~/android-sdk
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin
 
 # scala
 export SCALA_HOME="/usr/local/share/scala"
