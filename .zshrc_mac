@@ -11,5 +11,9 @@ else
   JAVA_HOME=`ls -d /Library/Java/JavaVirtualMachines/jdk1.8.0*.jdk | tail -1`
 fi
 
+# Android PATH
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin
+
 source $(brew --prefix nvm)/nvm.sh
 nvm use 5.0

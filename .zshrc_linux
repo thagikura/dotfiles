@@ -12,3 +12,7 @@ source /etc/bash_completion.d/g4d
 source ~/.zshrc_init_oh_my_zsh
 
 export GOPATH=~/go
+
+# Android PATH
+export ANDROID_HOME=~/Android/Sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin
