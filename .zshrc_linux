@@ -3,20 +3,12 @@ echo "Loading $0"
 
 export JAVA_HOME=/usr/local/buildtools/java/jdk
 
-export PATH=~/go_appengine
-
-source ~/.zshrc.pre-oh-my-zsh
-
 # Alias mac like pbcopy and pbpaste
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 source /etc/bash_completion.d/g4d
 
-# As a workaround the IDE stops responding where the ibus-deemon is active
-# http://tools.android.com/knownissues/ibus
-export IBUS_ENABLE_SYNC_MODE=1; ibus-daemon -xrd
-
-source ~/.zshrc.pre-oh-my-zsh
+source ~/.zshrc_init_oh_my_zsh
 
 export GOPATH=~/go
