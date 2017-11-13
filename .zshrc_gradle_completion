@@ -1,0 +1,21 @@
+echo "Loading $0"
+
+if [ -f /usr/share/zsh/functions/Completion/Unix ];then
+    DIR=/usr/share/zsh/functions/Completion/Unix
+elif [ -f /usr/local/share/zsh/site-functions ];then
+    DIR=/usr/local/share/zsh/site-functions
+else
+    DIR=~/zsh_completions
+    if [ ! -d $DIR ];then
+        mkdir -p $DIR
+    fi
+fi
+
+GRADLE_COMPLETION=$DIR/_gradle
+
+if [ ! -f $GRADLE_COMPLETION ];then
+    curl -o $GRADLE_COMPLETION https://gist.githubusercontent.com/petitviolet/910c0b54b067405d0aa3/raw/6cc95427f82f0673b6248de7e58ee6eb901099ff/_gradle
+fi
+
+echo $GRADLE_COMPLETION
+source $GRADLE_COMPLETION

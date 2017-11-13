@@ -6,6 +6,7 @@ LINK_FILES='
 .vimrc_python
 .zshrc
 .zshrc_init_oh_my_zsh
+.zshrc_gradle_completion
 .zshrc_linux
 .zshrc_mac
 .zshrc_mac_corp
