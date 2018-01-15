@@ -13,12 +13,6 @@ echo "Loading $0"
 
 [[ -s `which adb-peco` ]] && alias adbp="adb-peco"
 
-# Maven
-export PATH=$PATH:~/apache-maven-3.2.5/bin
-
-# Gradle
-export PATH=$PATH:~/gradle-2.2.1/bin
-
 # go
 GOROOT=/usr/local/go
 GOPATH=$GOROOT/bin
