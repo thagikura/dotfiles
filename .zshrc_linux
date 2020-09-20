@@ -1,7 +1,7 @@
 # Linux specific configurations
 echo "Loading $0"
 
-export JAVA_HOME=/usr/local/buildtools/java/jdk
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 # Alias mac like pbcopy and pbpaste
 alias pbcopy='xclip -selection clipboard'
