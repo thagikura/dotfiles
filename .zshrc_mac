@@ -2,13 +2,14 @@
 
 echo "Loading $0"
 
-source ~/.zshrc_init_oh_my_zsh
+# Enabling Starship
+eval "$(starship init zsh)"
 
 if [ -d /Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home ];then
   export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home
 else
-  ls -d /Library/Java/JavaVirtualMachines/jdk1.8.0*.jdk | tail -1
-  JAVA_HOME=`ls -d /Library/Java/JavaVirtualMachines/jdk1.8.0*.jdk | tail -1`
+  ls -d /Library/Java/JavaVirtualMachines/jdk*.jdk | tail -1
+  JAVA_HOME=`ls -d /Library/Java/JavaVirtualMachines/jdk*.jdk | tail -1`
 fi
 
 # Android PATH
