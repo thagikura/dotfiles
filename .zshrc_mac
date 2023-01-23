@@ -17,4 +17,4 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin
 
 source $(brew --prefix nvm)/nvm.sh
-nvm use 5.0
+nvm use --lts
