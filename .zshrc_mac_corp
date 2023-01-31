@@ -1,3 +1,8 @@
 # Corporate Mac specific configurations
 
 echo "Loading $0"
+
+if [ -d ~/studio-main ];then
+  export JAVA_HOME=~/studio-main/prebuilts/studio/jdk/jdk17/mac-arm64/Contents/Home
+  echo "JAVA_HOME=$JAVA_HOME"
+fi

@@ -5,7 +5,7 @@ if [ `uname` = "Darwin" ]; then
   source ~/.zshrc_mac
 
   # Check if the machine is the corporate one
-  hostname | grep "corp.google.com$" > /dev/null 2>&1
+  hostname | grep "internal$" > /dev/null 2>&1
   if [ $? = 0 ]; then
     source ~/.zshrc_mac_corp
   fi
