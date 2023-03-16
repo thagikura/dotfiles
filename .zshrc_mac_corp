@@ -4,5 +4,7 @@ echo "Loading $0"
 
 if [ -d ~/studio-main ];then
   export JAVA_HOME=~/studio-main/prebuilts/studio/jdk/jdk17/mac-arm64/Contents/Home
+  export PATH=$PATH:~/studio-main/tools/base/bazel
   echo "JAVA_HOME=$JAVA_HOME"
 fi
+
