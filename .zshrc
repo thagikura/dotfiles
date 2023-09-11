@@ -27,4 +27,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+rbenv global 2.7.5
+eval "$(rbenv init -)"
 
+nvm use 16.14.2
+
+eval "$(direnv hook zsh)"
