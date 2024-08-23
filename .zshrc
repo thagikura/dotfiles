@@ -30,6 +30,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 rbenv global 2.7.5
 eval "$(rbenv init -)"
 
-nvm use 16.14.2
+nvm use 18.12.0
 
 eval "$(direnv hook zsh)"
+
+export LANG=en_US.UTF-8
