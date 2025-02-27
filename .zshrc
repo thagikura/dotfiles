@@ -35,3 +35,9 @@ nvm use 18.12.0
 eval "$(direnv hook zsh)"
 
 export LANG=en_US.UTF-8
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/thagikura/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thagikura/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/thagikura/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thagikura/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
