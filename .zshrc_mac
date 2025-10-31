@@ -4,10 +4,8 @@ echo "Loading $0"
 
 source ~/.zshrc_init_oh_my_zsh
 
-if [ -d /Library/Java/JavaVirtualMachines/jbrsdk-17.0.8.1-osx-aarch64-b1059.3 ];then
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbrsdk-17.0.8.1-osx-aarch64-b1059.3/Contents/Home
-elif [ -d /Library/Java/JavaVirtualMachines/jdk-11-latest ];then
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11-latest/Contents/Home
+if [ -d /Users/thagikura/Library/Java/JavaVirtualMachines/jbr-17.0.14/ ];then
+  export JAVA_HOME=/Users/thagikura/Library/Java/JavaVirtualMachines/jbr-17.0.14/Contents/Home
 else
   jdk=`ls -d /Library/Java/JavaVirtualMachines/jdk*.jdk | tail -1`
   JAVA_HOME=`echo $jdk/Contents/Home`

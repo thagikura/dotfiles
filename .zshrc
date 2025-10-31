@@ -30,14 +30,24 @@ export PATH="$PATH:$HOME/.rvm/bin"
 rbenv global 2.7.5
 eval "$(rbenv init -)"
 
-nvm use 20
+nvm use 24
 
 eval "$(direnv hook zsh)"
 
 export LANG=en_US.UTF-8
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/thagikura/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thagikura/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/thagikura/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thagikura/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/thagikura/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thagikura/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/thagikura/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thagikura/google-cloud-sdk/completion.zsh.inc'; fi
+
+. "$HOME/.local/bin/env"
+
+# pnpm
+export PNPM_HOME="/Users/thagikura/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
