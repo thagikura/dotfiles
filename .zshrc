@@ -36,13 +36,7 @@ eval "$(direnv hook zsh)"
 
 export LANG=en_US.UTF-8
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/thagikura/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thagikura/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/thagikura/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thagikura/google-cloud-sdk/completion.zsh.inc'; fi
-
-. "$HOME/.local/bin/env"
+if [ -f "$HOME/.local/bin/env" ]; then . "$HOME/.local/bin/env"; fi
 
 # pnpm
 export PNPM_HOME="/Users/thagikura/Library/pnpm"
@@ -51,3 +45,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/thagikura/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thagikura/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/thagikura/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thagikura/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="$HOME/.local/bin:$PATH"
