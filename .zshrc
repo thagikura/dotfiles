@@ -52,3 +52,6 @@ if [ -f '/Users/thagikura/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thagi
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/thagikura/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thagikura/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="$HOME/.local/bin:$PATH"
+
+# Browser-Use
+export PATH="/Users/thagikura/.browser-use-env/bin:/Users/thagikura/.local/bin:$PATH"
